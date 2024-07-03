@@ -2,6 +2,17 @@
 
 import { useEffect, useState } from 'react';
 import { MDXRemote } from 'next-mdx-remote';
+import WebDevelopmentSVG from '../components/svg/WebDevelopmentSVG';
+import GraphicDesignSVG from '../components/svg/GraphicDesignSVG';
+import SportsSVG from '../components/svg/SportsSVG';
+import PersonalConsultingSVG from '../components/svg/PersonalConsultingSVG';
+
+const components = {
+  WebDevelopmentSVG,
+  GraphicDesignSVG,
+  SportsSVG,
+  PersonalConsultingSVG,
+};
 
 const ServicesPage = () => {
   const [mdxSource, setMdxSource] = useState(null);
@@ -28,14 +39,18 @@ const ServicesPage = () => {
   }, []);
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return <div>Hata: {error}</div>;
   }
 
   if (!mdxSource) {
     return <div>Loading...</div>;
   }
 
-  return <MDXRemote {...mdxSource} />;
+  return (
+    <div className="services-container">
+      <MDXRemote {...mdxSource} components={components} />
+    </div>
+  );
 };
 
 export default ServicesPage;
