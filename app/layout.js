@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import './globals.css';
 import { metadata } from './config';
+import DropdownMenu from './components/DropdownMenu';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,14 +22,18 @@ export default function RootLayout({ children }) {
             <li>
               <Link href="/hakkimizda">Hakkımızda</Link>
             </li>
+            <DropdownMenu />
             <li>
-              <Link href="/hizmetlerimiz">Hizmetler</Link>
+              <Link href="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link href="/iletisim">İletişim</Link>
             </li>
           </ul>
         </nav>
         <main className="p-4">{children}</main>
         <footer className="bg-gray-800 text-white p-4 text-center">
-          <p>© 2024 OngBoy</p>
+          <p>© 2024 Yazılım Firması</p>
         </footer>
       </body>
     </html>

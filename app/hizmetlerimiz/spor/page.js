@@ -2,26 +2,15 @@
 
 import { useEffect, useState } from 'react';
 import { MDXRemote } from 'next-mdx-remote';
-import WebDevelopmentSVG from '../components/svg/WebDevelopmentSVG';
-import GraphicDesignSVG from '../components/svg/GraphicDesignSVG';
-import SportsSVG from '../components/svg/SportsSVG';
-import PersonalConsultingSVG from '../components/svg/PersonalConsultingSVG';
 
-const components = {
-  WebDevelopmentSVG,
-  GraphicDesignSVG,
-  SportsSVG,
-  PersonalConsultingSVG,
-};
-
-const HizmetlerimizPage = () => {
+const SportPage = () => {
   const [mdxSource, setMdxSource] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchMdxContent = async () => {
       try {
-        const response = await fetch('/api/mdx?slug=hizmetlerimiz');
+        const response = await fetch('/api/mdx?slug=hizmetlerimiz/spor');
         if (!response.ok) {
           throw new Error(
             `Failed to fetch MDX content: ${response.statusText}`
@@ -46,11 +35,7 @@ const HizmetlerimizPage = () => {
     return <div>Loading...</div>;
   }
 
-  return (
-    <div className="services-container mx-auto px-4 py-8">
-      <MDXRemote {...mdxSource} components={components} />
-    </div>
-  );
+  return <MDXRemote {...mdxSource} />;
 };
 
-export default HizmetlerimizPage;
+export default SportPage;
