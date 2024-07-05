@@ -26,16 +26,21 @@ const DropdownMenu = () => {
       onMouseEnter={showDropdown}
       onMouseLeave={hideDropdown}
     >
-      <button className="focus:outline-none">Hizmetler</button>
+      <Link
+        href="/hizmetlerimiz"
+        className="focus:outline-none hover:border-b-2 hover:border-customPurple transition duration-300"
+      >
+        Hizmetler
+      </Link>
       <ul
-        className={`absolute left-0 ${
+        className={`absolute right-0 ${
           isDropdownVisible ? 'block' : 'hidden'
-        } bg-gray-800 p-2 mt-2 space-y-2 rounded shadow-lg`}
+        } bg-customGray p-2 mt-2 space-y-2 rounded shadow-lg z-20`}
       >
         <li>
           <Link
             href="/hizmetlerimiz/web-yazilim"
-            className="block px-4 py-2 hover:bg-gray-700 rounded"
+            className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
           >
             Web Yazılım
           </Link>
@@ -43,7 +48,7 @@ const DropdownMenu = () => {
         <li>
           <Link
             href="/hizmetlerimiz/grafik"
-            className="block px-4 py-2 hover:bg-gray-700 rounded"
+            className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
           >
             Grafik
           </Link>
@@ -51,7 +56,7 @@ const DropdownMenu = () => {
         <li>
           <Link
             href="/hizmetlerimiz/spor"
-            className="block px-4 py-2 hover:bg-gray-700 rounded"
+            className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
           >
             Spor
           </Link>
@@ -59,9 +64,9 @@ const DropdownMenu = () => {
         <li>
           <Link
             href="/hizmetlerimiz/kisisel-danismanlik"
-            className="block px-4 py-2 hover:bg-gray-700 rounded"
+            className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
           >
-            Kişisel Danışmanlık 
+            Kişisel Danışmanlık
           </Link>
         </li>
       </ul>

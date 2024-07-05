@@ -40,7 +40,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-gray-900 text-white rounded-lg shadow-md mt-10">
+    <div className="max-w-md mx-auto p-6 bg-customGray text-white rounded-lg shadow-md mt-10">
       <h1 className="text-2xl font-bold mb-4">İletişim</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
@@ -54,7 +54,7 @@ const ContactPage = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="mt-1 block w-full px-3 py-2 bg-customDarkGray border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
           />
         </div>
         <div>
@@ -68,7 +68,7 @@ const ContactPage = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="mt-1 block w-full px-3 py-2 bg-customDarkGray border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
           />
         </div>
         <div>
@@ -81,13 +81,13 @@ const ContactPage = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="mt-1 block w-full h-32 px-3 py-2 bg-customDarkGray border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
           />
         </div>
         <div>
           <button
             type="submit"
-            className="w-full bg-indigo-600 text-white py-2 px-4 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="w-full bg-customPurple text-white py-2 px-4 border border-transparent rounded-md shadow-sm hover:bg-customPurpleDark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             Gönder
           </button>

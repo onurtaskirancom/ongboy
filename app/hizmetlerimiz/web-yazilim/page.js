@@ -1,41 +1,11 @@
-'use client';
+const WebYazilimPage = () => (
+  <div className="max-w-4xl mx-auto p-6 bg-customGray text-white rounded-lg shadow-md mt-10">
+    <h1 className="text-3xl font-bold mb-6">Web Yazılım</h1>
+    <p className="text-lg">
+      Modern ve kullanıcı dostu web siteleri oluşturmak için gereksinimlerinizi
+      karşılar.
+    </p>
+  </div>
+);
 
-import { useEffect, useState } from 'react';
-import { MDXRemote } from 'next-mdx-remote';
-
-const WebDevelopmentPage = () => {
-  const [mdxSource, setMdxSource] = useState(null);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const fetchMdxContent = async () => {
-      try {
-        const response = await fetch('/api/mdx?slug=hizmetlerimiz/web-yazilim');
-        if (!response.ok) {
-          throw new Error(
-            `Failed to fetch MDX content: ${response.statusText}`
-          );
-        }
-        const mdxSource = await response.json();
-        setMdxSource(mdxSource);
-      } catch (error) {
-        console.error(error);
-        setError(error.message);
-      }
-    };
-
-    fetchMdxContent();
-  }, []);
-
-  if (error) {
-    return <div>Hata: {error}</div>;
-  }
-
-  if (!mdxSource) {
-    return <div>Loading...</div>;
-  }
-
-  return <MDXRemote {...mdxSource} />;
-};
-
-export default WebDevelopmentPage;
+export default WebYazilimPage;
