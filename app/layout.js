@@ -98,7 +98,7 @@ export default function RootLayout({ children }) {
         </nav>
         <main className="pt-28 p-4 relative z-10">{children}</main>
         <footer className="bg-customGray text-white p-4 text-center">
-          <p>© {currentYear} Yazılım Firması</p>
+          <p>© {currentYear} Ongboy</p>
         </footer>
       </body>
     </html>

@@ -54,7 +54,7 @@ const ContactPage = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="mt-1 block w-full px-3 py-2 bg-customDarkGray border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="mt-1 block w-full px-3 py-2 bg-customDarkGray border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-300 focus:border-indigo-300 sm:text-sm"
           />
         </div>
         <div>
@@ -68,7 +68,7 @@ const ContactPage = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="mt-1 block w-full px-3 py-2 bg-customDarkGray border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="mt-1 block w-full px-3 py-2 bg-customDarkGray border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-300 focus:border-indigo-300 sm:text-sm"
           />
         </div>
         <div>
@@ -81,7 +81,7 @@ const ContactPage = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="mt-1 block w-full h-32 px-3 py-2 bg-customDarkGray border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="mt-1 block w-full h-32 px-3 py-2 bg-customDarkGray border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-300 focus:border-indigo-300 sm:text-sm"
           />
         </div>
         <div>

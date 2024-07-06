@@ -1,7 +1,16 @@
+import Image from "next/image";
+
 const GrafikPage = () => (
   <div className="max-w-4xl mx-auto p-6 bg-customGray text-white rounded-lg shadow-md mt-10">
     <header className="w-full text-center py-6">
       <h1 className="text-3xl font-bold mb-6">Grafik Tasarım</h1>
+      <Image
+        src="/images/grafik.svg"
+        alt="Logo"
+        width={392}
+        height={392}
+        className="w-1/2 h-1/2 mx-auto mb-4"
+      />
     </header>
     <main>
       <p className="text-lg mb-4">

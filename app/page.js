@@ -7,7 +7,9 @@ import PersonalConsultingSVG from './components/svg/PersonalConsultingSVG';
 const HomePage = () => (
   <div className="min-h-screen bg-customGray text-white flex flex-col items-center justify-center p-6 relative">
     <header className="w-full text-center py-10 bg-customBlack relative overflow-hidden">
-      <h1 className="text-5xl font-bold mb-4 relative z-10">Yazılım Firması</h1>
+      <h1 className="text-5xl font-bold mb-4 relative z-10">
+        Yenilikçi Çözümler, Güçlü İşbirlikleri
+      </h1>
       <p className="text-xl relative z-10">
         Teknoloji ve yenilik ile sınırları zorlayan çözümler
       </p>
@@ -87,7 +89,9 @@ const HomePage = () => (
         >
           <div className="flex flex-col items-center">
             <SportsSVG className="w-12 h-12 mb-2" />
-            <h3 className="text-xl font-bold mb-2">Spor</h3>
+            <h3 className="text-xl font-bold mb-2">
+              Spor Koçluğu ve Performans Yönetimi
+            </h3>
             <p>Fiziksel sağlığınızı ve performansınızı artırın.</p>
           </div>
         </Link>
@@ -97,7 +101,9 @@ const HomePage = () => (
         >
           <div className="flex flex-col items-center">
             <PersonalConsultingSVG className="w-12 h-12 mb-2" />
-            <h3 className="text-xl font-bold mb-2">Kişisel Danışmanlık</h3>
+            <h3 className="text-xl font-bold mb-2">
+              Kişisel Gelişim ve Danışmanlık
+            </h3>
             <p>Yaşam kalitenizi artırmak için yanınızdayız.</p>
           </div>
         </Link>
