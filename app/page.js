@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import WebDevelopmentSVG from './components/svg/WebDevelopmentSVG';
-import GraphicDesignSVG from './components/svg/GraphicDesignSVG';
-import SportsSVG from './components/svg/SportsSVG';
-import PersonalConsultingSVG from './components/svg/PersonalConsultingSVG';
+import ECommerceSVG from './components/svg/ECommerceSVG';
+import CatalogDesignSVG from './components/svg/CatalogDesignSVG';
+import LogoDesignSVG from './components/svg/LogoDesignSVG';
+import CorporateWebSVG from './components/svg/CorporateWebSVG';
 
 const HomePage = () => (
   <div className="min-h-screen bg-customGray text-white flex flex-col items-center justify-center p-6 relative">
@@ -68,9 +68,24 @@ const HomePage = () => (
           className="block bg-customPurple p-4 rounded-lg text-center hover:bg-customPurpleDark transition duration-300"
         >
           <div className="flex flex-col items-center">
-            <WebDevelopmentSVG className="w-12 h-12 mb-2" />
-            <h3 className="text-xl font-bold mb-2">Web Yazılım</h3>
-            <p>Modern ve kullanıcı dostu web siteleri.</p>
+            <CorporateWebSVG className="w-12 h-12 mb-2" />
+            <h3 className="text-xl font-bold mb-2">Kurumsal Web Siteleri</h3>
+            <p>
+              Şirketinizin online yüzünü oluşturan profesyonel web siteleri.
+            </p>
+          </div>
+        </Link>
+        <Link
+          href="/hizmetlerimiz/web-yazilim"
+          className="block bg-customPurple p-4 rounded-lg text-center hover:bg-customPurpleDark transition duration-300"
+        >
+          <div className="flex flex-col items-center">
+            <ECommerceSVG className="w-12 h-12 mb-2" />
+            <h3 className="text-xl font-bold mb-2">E-Ticaret Çözümleri</h3>
+            <p>
+              Ürünlerinizi online satmanıza olanak tanıyan güvenli ve kullanıcı
+              dostu e-ticaret platformları.
+            </p>
           </div>
         </Link>
         <Link
@@ -78,37 +93,33 @@ const HomePage = () => (
           className="block bg-customPurple p-4 rounded-lg text-center hover:bg-customPurpleDark transition duration-300"
         >
           <div className="flex flex-col items-center">
-            <GraphicDesignSVG className="w-12 h-12 mb-2" />
-            <h3 className="text-xl font-bold mb-2">Grafik</h3>
-            <p>Markanızın görsel kimliğini güçlendirin.</p>
+            <LogoDesignSVG className="w-12 h-12 mb-2" />
+            <h3 className="text-xl font-bold mb-2">Logo Tasarım</h3>
+            <p>
+              Markanızın yüzünü temsil edecek, özgün ve akılda kalıcı logo
+              tasarımları.
+            </p>
           </div>
         </Link>
         <Link
-          href="/hizmetlerimiz/spor"
+          href="/hizmetlerimiz/grafik"
           className="block bg-customPurple p-4 rounded-lg text-center hover:bg-customPurpleDark transition duration-300"
         >
           <div className="flex flex-col items-center">
-            <SportsSVG className="w-12 h-12 mb-2" />
-            <h3 className="text-xl font-bold mb-2">
-              Spor Koçluğu ve Performans Yönetimi
-            </h3>
-            <p>Fiziksel sağlığınızı ve performansınızı artırın.</p>
-          </div>
-        </Link>
-        <Link
-          href="/hizmetlerimiz/kisisel-danismanlik"
-          className="block bg-customPurple p-4 rounded-lg text-center hover:bg-customPurpleDark transition duration-300"
-        >
-          <div className="flex flex-col items-center">
-            <PersonalConsultingSVG className="w-12 h-12 mb-2" />
-            <h3 className="text-xl font-bold mb-2">
-              Kişisel Gelişim ve Danışmanlık
-            </h3>
-            <p>Yaşam kalitenizi artırmak için yanınızdayız.</p>
+            <CatalogDesignSVG className="w-12 h-12 mb-2" />
+            <h3 className="text-xl font-bold mb-2">Katalog Tasarımı</h3>
+            <p>
+              Ürün ve hizmetlerinizi detaylı ve şık bir şekilde tanıtan katalog
+              tasarımları.
+            </p>
           </div>
         </Link>
       </section>
     </main>
+
+    <footer className="w-full text-center py-6 bg-customBlack">
+      <p>© {new Date().getFullYear()} Yazılım Firması</p>
+    </footer>
   </div>
 );
 
