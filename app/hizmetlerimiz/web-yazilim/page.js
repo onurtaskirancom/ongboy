@@ -36,10 +36,6 @@ const WebDevelopmentPage = () => (
             <strong>Web Uygulamaları:</strong> Özel ihtiyaçlarınıza göre
             tasarlanmış, iş süreçlerinizi optimize eden web tabanlı uygulamalar.
           </li>
-          <li className="text-lg mb-2">
-            <strong>SEO Optimizasyonu:</strong> Web sitenizin arama motorlarında
-            daha görünür olmasını sağlayan SEO hizmetleri.
-          </li>
           <li className="text-lg">
             <strong>Bakım ve Destek:</strong> Web sitenizin sorunsuz çalışmasını
             sağlamak için sürekli bakım ve teknik destek hizmetleri.

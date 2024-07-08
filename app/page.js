@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import ECommerceSVG from './components/svg/ECommerceSVG';
 import CatalogDesignSVG from './components/svg/CatalogDesignSVG';
-import LogoDesignSVG from './components/svg/LogoDesignSVG';
 import CorporateWebSVG from './components/svg/CorporateWebSVG';
+import BookLayoutSVG from './components/svg/BookLayoutSVG'; // Kitap Mizanpaşı SVG bileşenini ekleyin
 
 const HomePage = () => (
   <div className="min-h-screen bg-customGray text-white flex flex-col items-center justify-center p-6 relative">
@@ -64,7 +64,7 @@ const HomePage = () => (
 
       <section className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-10">
         <Link
-          href="/hizmetlerimiz/web-yazilim"
+          href="/hizmetlerimiz/kurumsal-web-siteleri"
           className="block bg-customPurple p-4 rounded-lg text-center hover:bg-customPurpleDark transition duration-300"
         >
           <div className="flex flex-col items-center">
@@ -76,7 +76,7 @@ const HomePage = () => (
           </div>
         </Link>
         <Link
-          href="/hizmetlerimiz/web-yazilim"
+          href="/hizmetlerimiz/eticaret"
           className="block bg-customPurple p-4 rounded-lg text-center hover:bg-customPurpleDark transition duration-300"
         >
           <div className="flex flex-col items-center">
@@ -89,20 +89,19 @@ const HomePage = () => (
           </div>
         </Link>
         <Link
-          href="/hizmetlerimiz/grafik"
+          href="/hizmetlerimiz/kitap-mizanpaj"
           className="block bg-customPurple p-4 rounded-lg text-center hover:bg-customPurpleDark transition duration-300"
         >
           <div className="flex flex-col items-center">
-            <LogoDesignSVG className="w-12 h-12 mb-2" />
-            <h3 className="text-xl font-bold mb-2">Logo Tasarım</h3>
+            <BookLayoutSVG className="w-12 h-12 mb-2" />
+            <h3 className="text-xl font-bold mb-2">Kitap Mizanpaj</h3>
             <p>
-              Markanızın yüzünü temsil edecek, özgün ve akılda kalıcı logo
-              tasarımları.
+              Kitaplarınız için profesyonel ve estetik mizanpaj tasarımları.
             </p>
           </div>
         </Link>
         <Link
-          href="/hizmetlerimiz/grafik"
+          href="/hizmetlerimiz/katalog"
           className="block bg-customPurple p-4 rounded-lg text-center hover:bg-customPurpleDark transition duration-300"
         >
           <div className="flex flex-col items-center">
@@ -116,10 +115,6 @@ const HomePage = () => (
         </Link>
       </section>
     </main>
-
-    <footer className="w-full text-center py-6 bg-customBlack">
-      <p>© {new Date().getFullYear()} Yazılım Firması</p>
-    </footer>
   </div>
 );
 

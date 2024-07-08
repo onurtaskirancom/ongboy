@@ -55,18 +55,74 @@ const DropdownMenu = () => {
         </li>
         <li>
           <Link
-            href="/hizmetlerimiz/spor"
+            href="/hizmetlerimiz/eticaret"
             className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
           >
-            Spor
+            Eticaret
           </Link>
         </li>
         <li>
           <Link
-            href="/hizmetlerimiz/kisisel-danismanlik"
+            href="/hizmetlerimiz/kurumsal-web-siteleri"
             className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
           >
-            Kişisel Danışmanlık
+            Kurumsal Web Siteleri
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/hizmetlerimiz/blog-icerik-yonetim-sistemleri"
+            className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+          >
+            Blog ve İçerik Yönetim Sistemleri
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/hizmetlerimiz/dergi"
+            className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+          >
+            Dergi
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/hizmetlerimiz/katalog"
+            className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+          >
+            Katalog
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/hizmetlerimiz/kitap-mizanpaj"
+            className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+          >
+            Kitap Mizanpaş
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/hizmetlerimiz/afis-brosur"
+            className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+          >
+            Afiş, Broşür
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/hizmetlerimiz/kartvizit-tasarim"
+            className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+          >
+            Kartvizit Tasarım
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/hizmetlerimiz/logo-tasarim"
+            className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+          >
+            Logo Tasarım
           </Link>
         </li>
       </ul>
