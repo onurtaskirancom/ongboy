@@ -25,7 +25,13 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${inter.className} bg-customBlack text-white`}>
         <nav className="bg-customGray p-4 text-white flex items-center justify-between fixed w-full top-0 z-50 shadow-md px-8">
-          <img src="/images/ongboy-logo.svg" alt="Logo" className="h-12" />
+          <Link href="/">
+            <img
+              src="/images/ongboy-logo.svg"
+              alt="Logo"
+              className="h-12 cursor-pointer"
+            />
+          </Link>
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
