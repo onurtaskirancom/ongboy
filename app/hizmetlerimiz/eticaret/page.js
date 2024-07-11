@@ -9,7 +9,7 @@ const EcommercePage = () => (
         alt="Eticaret"
         width={392}
         height={392}
-        className="w-1/2 h-1/2 mx-auto mb-4"
+        className="w-1/3 h-1/3 mx-auto mb-4"
       />
     </header>
     <main>
