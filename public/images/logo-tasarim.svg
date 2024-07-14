@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 226.72 200.17" style="enable-background:new 0 0 226.72 200.17;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:#FFFFFF;}
+	.st2{fill:#A3DEE8;}
+	.st3{fill:#DD076D;}
+	.st4{fill:#FFF27D;}
+	.st5{fill:#2D2D2D;}
+	.st6{fill:#AF49B7;}
+	.st7{fill:#80BF88;}
+</style>
+<g id="BACKGROUND" class="st0">
+	<rect x="-136.64" y="-110.8" class="st1" width="500" height="500"/>
+</g>
+<g id="OBJECTS">
+	<g>
+		<g>
+			<rect x="79.83" y="164.79" class="st2" width="15.26" height="3.99"/>
+			<rect x="97.1" y="164.79" class="st3" width="15.26" height="3.99"/>
+			<rect x="114.37" y="164.79" class="st4" width="15.26" height="3.99"/>
+			<rect x="131.64" y="164.79" class="st5" width="15.26" height="3.99"/>
+		</g>
+		<g>
+			<g>
+				<path class="st4" d="M171.11,94.99c0,31.84-25.91,57.75-57.75,57.75c-31.84,0-57.75-25.91-57.75-57.75c0-4.97,4.03-9,9-9
+					s9,4.03,9,9c0,21.92,17.83,39.75,39.75,39.75c21.92,0,39.75-17.83,39.75-39.75c0-4.97,4.03-9,9-9S171.11,90.02,171.11,94.99z"/>
+			</g>
+			<g>
+				<path class="st2" d="M171.11,94.99c0,4.97-4.03,9-9,9s-9-4.03-9-9c0-21.92-17.83-39.75-39.75-39.75c-4.97,0-9-4.03-9-9
+					s4.03-9,9-9C145.21,37.25,171.11,63.15,171.11,94.99z"/>
+			</g>
+			<g>
+				<path class="st3" d="M122.36,46.25v48.75c0,4.97-4.03,9-9,9c-4.97,0-9-4.03-9-9V46.25c0-4.97,4.03-9,9-9
+					C118.33,37.25,122.36,41.28,122.36,46.25z"/>
+			</g>
+			<g>
+				
+					<ellipse transform="matrix(0.1606 -0.987 0.987 0.1606 49.563 150.6629)" class="st6" cx="113.36" cy="46.19" rx="8.94" ry="8.94"/>
+			</g>
+			<g>
+				<g>
+					
+						<ellipse transform="matrix(0.1606 -0.987 0.987 0.1606 1.3932 191.6271)" class="st5" cx="113.36" cy="94.99" rx="8.94" ry="8.94"/>
+				</g>
+			</g>
+			<g>
+				<circle class="st7" cx="162.17" cy="94.99" r="8.94"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
