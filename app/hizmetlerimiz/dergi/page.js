@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 const MagazinePage = () => (
-  <div className="max-w-4xl mx-auto p-6 bg-customGray text-white rounded-lg shadow-md mt-10">
+  <div className="max-w-4xl mx-auto p-6 bg-customGray text-white rounded-lg shadow-md">
     <header className="w-full text-center py-6">
       <h1 className="text-3xl font-bold mb-6">Dergi</h1>
       <Image

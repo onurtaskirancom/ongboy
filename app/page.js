@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import ECommerceSVG from './components/svg/ECommerceSVG';
+import ECommerceSVG from './components/svg/EcommerceSVG';
 import CatalogDesignSVG from './components/svg/CatalogDesignSVG';
 import CorporateWebSVG from './components/svg/CorporateWebSVG';
-import BookLayoutSVG from './components/svg/BookLayoutSVG'; // Kitap Mizanpaşı SVG bileşenini ekleyin
+import BookLayoutSVG from './components/svg/BookLayoutSVG';
 
 const HomePage = () => (
   <div className="min-h-screen bg-customGray text-white flex flex-col items-center justify-center p-6 relative">
@@ -53,12 +53,10 @@ const HomePage = () => (
         <p className="text-lg mb-4">
           Biz, müşterilerimize en iyi hizmeti sunmak için yenilikçi yazılım
           çözümleri geliştiriyoruz. Modern ve kullanıcı dostu web siteleri,
-          grafik tasarımlar, spor koçluğu ve kişisel danışmanlık hizmetlerimizle
-          yanınızdayız.
+          grafik tasarımlar ile yanınızdayız.
         </p>
         <p className="text-lg mb-4">
-          Hizmetlerimiz hakkında daha fazla bilgi edinmek için aşağıdaki
-          bağlantılara göz atın.
+          En yeni hizmetlerimizi keşfedin ve dijital dünyada bir adım önde olun.
         </p>
       </section>
 

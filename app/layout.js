@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${inter.className} bg-customBlack text-white`}>
         <nav className="bg-customGray p-4 text-white flex items-center justify-between fixed w-full top-0 z-50 shadow-md px-8">
-          <Link href="/">
+          <Link href="/" className="flex items-center ml-4">
             <img
               src="/images/ongboy-logo.svg"
               alt="Logo"
@@ -65,12 +65,12 @@ export default function RootLayout({ children }) {
           <ul
             className={`flex-col lg:flex-row lg:flex items-center space-x-4 ${
               menuOpen ? 'flex' : 'hidden'
-            } lg:flex`}
+            } lg:flex mr-4`}
           >
             <li>
               <Link
                 href="/"
-                className="hover:border-b-2 hover:border-customPurple transition duration-300"
+                className="hover:border-b-2 hover:border-customPurple transition duration-300 px-2"
               >
                 Ana Sayfa
               </Link>
@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
             <li>
               <Link
                 href="/hakkimizda"
-                className="hover:border-b-2 hover:border-customPurple transition duration-300"
+                className="hover:border-b-2 hover:border-customPurple transition duration-300 px-2"
               >
                 Hakkımızda
               </Link>
@@ -87,7 +87,7 @@ export default function RootLayout({ children }) {
             <li>
               <Link
                 href="/blog"
-                className="hover:border-b-2 hover:border-customPurple transition duration-300"
+                className="hover:border-b-2 hover:border-customPurple transition duration-300 px-2"
               >
                 Blog
               </Link>
@@ -95,7 +95,7 @@ export default function RootLayout({ children }) {
             <li>
               <Link
                 href="/iletisim"
-                className="hover:border-b-2 hover:border-customPurple transition duration-300"
+                className="hover:border-b-2 hover:border-customPurple transition duration-300 px-2"
               >
                 İletişim
               </Link>
