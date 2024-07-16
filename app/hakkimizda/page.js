@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 const AboutPage = () => (
-  <div className="max-w-4xl mx-auto p-6 bg-customGray text-white rounded-lg shadow-md mt-10">
+  <div className="max-w-4xl mx-auto p-6 bg-customGray text-white rounded-lg shadow-md">
     <h1 className="text-3xl font-bold mb-6">Hakkımızda</h1>
     <Image
       src="/images/ongboy-logo.svg"

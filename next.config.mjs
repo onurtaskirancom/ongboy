@@ -1,7 +1,3 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {};
-
-// export default nextConfig;
 import withMDX from '@next/mdx';
 
 const mdxOptions = {
@@ -10,6 +6,16 @@ const mdxOptions = {
 
 const nextConfig = withMDX(mdxOptions)({
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+      };
+    }
+    return config;
+  },
 });
 
 export default nextConfig;
