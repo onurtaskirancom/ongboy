@@ -45,19 +45,22 @@ const BlogPostPage = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-customGray text-white rounded-lg shadow-md">
-      <div className="relative w-full h-[300px] mb-8">
+    <div className="max-w-4xl mx-auto bg-customGray text-white rounded-xl shadow-md">
+      <div className="w-full mb-8">
         <Image
           src={post.frontMatter?.image || '/images/default.jpg'}
           alt={post.frontMatter?.title}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-t-lg"
+          layout="responsive"
+          width={800}
+          height={300}
+          className="w-full rounded-xl"
         />
       </div>
-      <h1 className="text-3xl font-bold mb-6">{post.frontMatter?.title}</h1>
-      <p className="text-sm mb-8">{post.frontMatter?.date}</p>
-      <MDXRemote {...post.mdxSource} />
+      <div className="p-6">
+        <h1 className="text-3xl font-bold mb-6">{post.frontMatter?.title}</h1>
+        <p className="text-sm mb-8">{post.frontMatter?.date}</p>
+        <MDXRemote {...post.mdxSource} />
+      </div>
     </div>
   );
 };

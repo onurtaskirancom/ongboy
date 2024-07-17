@@ -34,13 +34,14 @@ const BlogPage = () => {
             className="bg-customDarkGray rounded-lg shadow-md overflow-hidden"
           >
             <Link href={`/blog/${slug}`}>
-              <div className="relative w-full h-48 cursor-pointer">
+              <div className="relative w-full cursor-pointer">
                 <Image
                   src={frontMatter.image || '/images/default.jpg'}
                   alt={frontMatter.title}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-t-md"
+                  layout="responsive"
+                  width={800}
+                  height={450}
+                  className="w-full rounded-t-lg"
                 />
               </div>
             </Link>
