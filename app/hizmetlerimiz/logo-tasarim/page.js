@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ContactPanel from '../../components/ContactPanel';
 
 const LogoDesignPage = () => (
   <div className="max-w-4xl mx-auto p-6 bg-customGray text-white rounded-lg shadow-md">
@@ -23,6 +24,7 @@ const LogoDesignPage = () => (
         izlenim bırakmak için yaratıcı logo tasarımlarımızdan yararlanın.
       </p>
     </main>
+    <ContactPanel />
   </div>
 );
 

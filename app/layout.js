@@ -70,7 +70,7 @@ export default function RootLayout({ children }) {
             <li>
               <Link
                 href="/"
-                className="hover:border-b-2 hover:border-customPurple transition duration-300 px-2"
+                className="hover:border-b-4 hover:border-customPurple transition duration-300 px-2"
               >
                 Ana Sayfa
               </Link>
@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
             <li>
               <Link
                 href="/hakkimizda"
-                className="hover:border-b-2 hover:border-customPurple transition duration-300 px-2"
+                className="hover:border-b-4 hover:border-customPurple transition duration-300 px-2"
               >
                 Hakkımızda
               </Link>
@@ -87,7 +87,7 @@ export default function RootLayout({ children }) {
             <li>
               <Link
                 href="/blog"
-                className="hover:border-b-2 hover:border-customPurple transition duration-300 px-2"
+                className="hover:border-b-4 hover:border-customPurple transition duration-300 px-2"
               >
                 Blog
               </Link>
@@ -95,7 +95,7 @@ export default function RootLayout({ children }) {
             <li>
               <Link
                 href="/iletisim"
-                className="hover:border-b-2 hover:border-customPurple transition duration-300 px-2"
+                className="hover:border-b-4 hover:border-customPurple transition duration-300 px-2"
               >
                 İletişim
               </Link>

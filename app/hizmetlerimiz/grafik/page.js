@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ContactPanel from '../../components/ContactPanel';
 
 const GrafikPage = () => (
   <div className="max-w-4xl mx-auto p-6 bg-customGray text-white rounded-lg shadow-md">
@@ -46,6 +47,7 @@ const GrafikPage = () => (
         </li>
       </ul>
     </main>
+    <ContactPanel />
   </div>
 );
 

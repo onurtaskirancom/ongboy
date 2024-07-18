@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ContactPanel from '../../components/ContactPanel';
 
 const PosterBrochurePage = () => (
   <div className="max-w-4xl mx-auto p-6 bg-customGray text-white rounded-lg shadow-md">
@@ -23,6 +24,7 @@ const PosterBrochurePage = () => (
         profesyonel afiş ve broşür tasarımlarımızla fark yaratın.
       </p>
     </main>
+    <ContactPanel />
   </div>
 );
 

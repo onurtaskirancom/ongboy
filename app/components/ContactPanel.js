@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-const ContactPage = () => {
+const ContactPanel = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -41,8 +41,8 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-customGray text-white rounded-lg shadow-md">
-      <h1 className="text-2xl font-bold mb-4">İletişim</h1>
+    <div className="max-w-4xl mx-auto p-6 bg-customGray text-white rounded-lg shadow-md mt-10">
+      <h2 className="text-2xl font-bold mb-4">Bize Ulaşın</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium">
@@ -58,33 +58,35 @@ const ContactPage = () => {
             className="mt-1 block w-full px-3 py-2 bg-customDarkGray border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-300 focus:border-indigo-300 sm:text-sm"
           />
         </div>
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className="mt-1 block w-full px-3 py-2 bg-customDarkGray border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-300 focus:border-indigo-300 sm:text-sm"
-          />
-        </div>
-        <div>
-          <label htmlFor="phone" className="block text-sm font-medium">
-            Telefon
-          </label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            required
-            className="mt-1 block w-full px-3 py-2 bg-customDarkGray border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-300 focus:border-indigo-300 sm:text-sm"
-          />
+        <div className="flex space-x-4">
+          <div className="flex-1">
+            <label htmlFor="email" className="block text-sm font-medium">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className="mt-1 block w-full px-3 py-2 bg-customDarkGray border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-300 focus:border-indigo-300 sm:text-sm"
+            />
+          </div>
+          <div className="flex-1">
+            <label htmlFor="phone" className="block text-sm font-medium">
+              Telefon
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+              className="mt-1 block w-full px-3 py-2 bg-customDarkGray border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-300 focus:border-indigo-300 sm:text-sm"
+            />
+          </div>
         </div>
         <div>
           <label htmlFor="message" className="block text-sm font-medium">
@@ -113,4 +115,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default ContactPanel;

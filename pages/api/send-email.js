@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    const { name, email, message } = req.body;
+    const { name, email, phone, message } = req.body;
 
     // Nodemailer transporter installation
     const transporter = nodemailer.createTransport({
@@ -16,9 +16,9 @@ export default async function handler(req, res) {
     // Email content
     const mailOptions = {
       from: email,
-      to: process.env.RECIPIENT_EMAIL, 
+      to: process.env.RECIPIENT_EMAIL,
       subject: `Yeni İletişim Formu Mesajı: ${name}`,
-      text: `Ad: ${name}\nEmail: ${email}\nMesaj: ${message}`,
+      text: `Ad: ${name}\nEmail: ${email}\nTelefon: ${phone}\nMesaj: ${message}`,
     };
 
     try {

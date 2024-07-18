@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote';
 import Image from 'next/image';
+import ClipLoader from 'react-spinners/ClipLoader';
+import MDXComponents from '../../components/MDXComponents';
 
 const BlogPostPage = () => {
   const { slug } = useParams();
@@ -33,7 +35,11 @@ const BlogPostPage = () => {
   }, [slug]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <ClipLoader color="#849fd9" size={50} />
+      </div>
+    );
   }
 
   if (error) {
@@ -59,7 +65,7 @@ const BlogPostPage = () => {
       <div className="p-6">
         <h1 className="text-3xl font-bold mb-6">{post.frontMatter?.title}</h1>
         <p className="text-sm mb-8">{post.frontMatter?.date}</p>
-        <MDXRemote {...post.mdxSource} />
+        <MDXRemote {...post.mdxSource} components={MDXComponents} />
       </div>
     </div>
   );

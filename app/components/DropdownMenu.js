@@ -28,7 +28,7 @@ const DropdownMenu = () => {
     >
       <Link
         href="/hizmetlerimiz"
-        className="focus:outline-none hover:border-b-2 hover:border-customPurple transition duration-300"
+        className="focus:outline-none hover:border-b-4 hover:border-customPurple transition duration-300"
       >
         Hizmetler
       </Link>
