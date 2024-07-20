@@ -49,7 +49,7 @@ const HomePage = () => (
 
     <main className="w-full flex-1 flex flex-col items-center justify-center relative z-10">
       <section className="max-w-4xl text-center my-10">
-        <h2 className="text-3xl font-semibold mb-6">Hoş Geldiniz</h2>
+        <h2 className="text-3xl font-semibold mb-6">Modern İnovasyonlar</h2>
         <p className="text-lg mb-4">
           Biz, müşterilerimize en iyi hizmeti sunmak için yenilikçi yazılım
           çözümleri geliştiriyoruz. Modern ve kullanıcı dostu web siteleri,
