@@ -13,6 +13,7 @@ module.exports = {
         customGray: '#212121',
         customBlack: '#171717',
         customDarkGray: '#2f2f2f',
+        customDarkerGray: '#3b3f44',
       },
       keyframes: {
         logo: {

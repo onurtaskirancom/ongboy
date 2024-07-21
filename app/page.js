@@ -47,17 +47,25 @@ const HomePage = () => (
       </div>
     </header>
 
-    <main className="w-full flex-1 flex flex-col items-center justify-center relative z-10">
-      <section className="max-w-4xl text-center my-10">
-        <h2 className="text-3xl font-semibold mb-6">Modern İnovasyonlar</h2>
-        <p className="text-lg mb-4">
-          Biz, müşterilerimize en iyi hizmeti sunmak için yenilikçi yazılım
-          çözümleri geliştiriyoruz. Modern ve kullanıcı dostu web siteleri,
-          grafik tasarımlar ile yanınızdayız.
-        </p>
-        <p className="text-lg mb-4">
-          En yeni hizmetlerimizi keşfedin ve dijital dünyada bir adım önde olun.
-        </p>
+    <main className="w-full flex-1 flex flex-col items-center justify-center relative z-10 mt-16">
+      <section className="relative w-full max-w-6xl mx-auto mb-10">
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-300 to-gray-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+        <div className="relative px-4 py-8 bg-customDarkerGray text-white shadow-lg sm:rounded-3xl sm:p-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-semibold mb-6 text-white">
+              Modern İnovasyonlar
+            </h2>
+            <p className="text-lg mb-4 text-white">
+              Biz, müşterilerimize en iyi hizmeti sunmak için yenilikçi yazılım
+              çözümleri geliştiriyoruz. Modern ve kullanıcı dostu web siteleri,
+              grafik tasarımlar ile yanınızdayız.
+            </p>
+            <p className="text-lg mb-4 text-white">
+              En yeni hizmetlerimizi keşfedin ve dijital dünyada bir adım önde
+              olun.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-10">
