@@ -3,7 +3,7 @@ import ECommerceSVG from './components/svg/EcommerceSVG';
 import CatalogDesignSVG from './components/svg/CatalogDesignSVG';
 import CorporateWebSVG from './components/svg/CorporateWebSVG';
 import BookLayoutSVG from './components/svg/BookLayoutSVG';
-import InnovationSVG from './components/svg/InnovationSVG'; // Yeni SVG dosyanızı ekleyin
+import InnovationSVG from './components/svg/InnovationSVG'; 
 
 const HomePage = () => (
   <div className="min-h-screen bg-customGray text-white flex flex-col items-center justify-center p-6 relative">
@@ -49,11 +49,12 @@ const HomePage = () => (
     </header>
 
     <main className="w-full flex-1 flex flex-col items-center justify-center relative z-10 mt-16">
-      <section className="relative w-full max-w-6xl mx-auto mb-10 flex items-center">
-        <div className="max-w-4xl mx-auto px-4 py-8 text-white">
+      <section className="relative w-full max-w-6xl mx-auto mb-10 flex flex-col lg:flex-row items-center">
+        <div className="max-w-4xl mx-auto px-4 py-8 text-white text-center lg:text-left">
           <h2 className="text-3xl font-semibold mb-6 text-white">
             Modern İnovasyonlar
           </h2>
+          <InnovationSVG className="w-48 h-48 mb-6 lg:hidden mx-auto" />
           <p className="text-lg mb-4 text-white">
             Biz, müşterilerimize en iyi hizmeti sunmak için yenilikçi yazılım
             çözümleri geliştiriyoruz. Modern ve kullanıcı dostu web siteleri,
@@ -64,8 +65,8 @@ const HomePage = () => (
             olun.
           </p>
         </div>
-        <div className="ml-8">
-          <InnovationSVG className="w-48 h-48" /> {/* SVG resmini ekleyin */}
+        <div className="ml-8 hidden lg:block">
+          <InnovationSVG className="w-48 h-48" /> 
         </div>
       </section>
 
