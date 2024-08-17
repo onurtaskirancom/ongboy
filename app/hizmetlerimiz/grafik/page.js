@@ -1,5 +1,8 @@
-import Image from "next/image";
+import Image from 'next/image';
 import ContactPanel from '../../components/ContactPanel';
+import { generateMetadata } from './metadata'; // Metadata import edildi
+
+export { generateMetadata }; // Metadata export edildi
 
 const GrafikPage = () => (
   <div className="max-w-4xl mx-auto p-6 bg-customGray text-white rounded-lg shadow-md">

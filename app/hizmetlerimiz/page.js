@@ -10,6 +10,9 @@ import BlogCMSVG from '../components/svg/BlogCMSVG';
 import MagazineSVG from '../components/svg/MagazineSVG';
 import PosterBrochureSVG from '../components/svg/PosterBrochureSVG';
 import BusinessCardSVG from '../components/svg/BusinessCardSVG';
+import { generateMetadata } from './metadata'; // Metadata import edildi
+
+export { generateMetadata }; // Metadata export edildi
 
 const ServicesPage = () => {
   return (

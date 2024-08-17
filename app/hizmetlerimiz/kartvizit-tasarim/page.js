@@ -1,5 +1,8 @@
 import Image from 'next/image';
 import ContactPanel from '../../components/ContactPanel';
+import { generateMetadata } from './metadata'; 
+
+export { generateMetadata }; 
 
 const BusinessCardDesignPage = () => (
   <div className="max-w-4xl mx-auto p-6 bg-customGray text-white rounded-lg shadow-md">
