@@ -58,7 +58,7 @@ const DropdownMenu = () => {
             href="/hizmetlerimiz/eticaret"
             className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
           >
-            Eticaret
+            E-Ticaret
           </Link>
         </li>
         <li>
