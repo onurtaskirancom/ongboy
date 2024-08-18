@@ -101,8 +101,15 @@ export default function RootLayoutClient({ children }) {
         </ul>
       </nav>
       <main className="pt-28 p-4 relative z-10">{children}</main>
-      <footer className="bg-customGray text-white p-4 text-center">
-        <p>© {currentYear} Ongboy</p>
+      <footer className="bg-customGray text-white p-4 text-center flex flex-col items-center md:flex-row md:justify-center">
+        <Link href="/" className="flex items-center ml-4">
+          <img
+            src="/images/ongboy-footer-logo.svg"
+            alt="Logo"
+            className="h-5 cursor-pointer mr-2"
+          />
+          <p>© {currentYear} Ongboy</p>
+        </Link>
       </footer>
     </div>
   );
