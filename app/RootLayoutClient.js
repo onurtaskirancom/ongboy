@@ -105,7 +105,7 @@ export default function RootLayoutClient({ children }) {
         <Link href="/" className="flex items-center ml-4">
           <img
             src="/images/ongboy-footer-logo.svg"
-            alt="Logo"
+            alt="Ongboy Logo"
             className="h-5 cursor-pointer mr-2"
           />
           <p>© {currentYear} Ongboy</p>
