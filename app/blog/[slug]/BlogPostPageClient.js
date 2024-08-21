@@ -2,9 +2,17 @@
 
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
-import { MDXRemote } from 'next-mdx-remote';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import ClipLoader from 'react-spinners/ClipLoader';
+
+const MDXRemote = dynamic(
+  () => import('next-mdx-remote').then((mod) => mod.MDXRemote),
+  {
+    ssr: false,
+  }
+);
+
 import MDXComponents from '../../components/MDXComponents';
 
 const BlogPostPageClient = () => {
@@ -12,8 +20,12 @@ const BlogPostPageClient = () => {
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [searchParams, setSearchParams] = useState(null);
 
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setSearchParams(params);
+
     if (slug) {
       const fetchPost = async () => {
         try {
@@ -52,19 +64,20 @@ const BlogPostPageClient = () => {
 
   return (
     <div className="max-w-4xl mx-auto bg-customGray text-white rounded-xl shadow-md">
-      <div className="w-full mb-8">
+      <div className="relative w-full h-96 mb-8">
         <Image
           src={post.frontMatter?.image || '/images/default.jpg'}
           alt={post.frontMatter?.title}
-          layout="responsive"
-          width={800}
-          height={300}
-          className="w-full rounded-xl"
+          fill
+          sizes="50vw"
+          className="object-cover rounded-xl"
+          priority
         />
       </div>
       <div className="p-6">
         <h1 className="text-3xl font-bold mb-6">{post.frontMatter?.title}</h1>
         <p className="text-sm mb-8">{post.frontMatter?.date}</p>
+        <p>Search Param: {searchParams?.get('paramName')}</p>
         <MDXRemote {...post.mdxSource} components={MDXComponents} />
       </div>
     </div>

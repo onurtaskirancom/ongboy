@@ -3,6 +3,7 @@
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image';
 import './globals.css';
 import DropdownMenu from './components/DropdownMenu';
 import CanonicalHead from './components/CanonicalHead';
@@ -24,10 +25,14 @@ export default function RootLayoutClient({ children }) {
       />
       <nav className="bg-customGray p-4 text-white flex items-center justify-between fixed w-full top-0 z-50 shadow-md px-8">
         <Link href="/" className="flex items-center ml-4">
-          <img
+          <Image
             src="/images/ongboy-logo.svg"
             alt="Ongboy Logo"
-            className="h-12 cursor-pointer"
+            width={48}
+            height={48}
+            className="cursor-pointer"
+            priority
+            style={{ width: '48px', height: '48px', objectFit: 'contain' }}
           />
         </Link>
         <div className="lg:hidden">
@@ -103,10 +108,14 @@ export default function RootLayoutClient({ children }) {
       <main className="pt-28 p-4 relative z-10">{children}</main>
       <footer className="bg-customGray text-white p-4 text-center flex flex-col items-center md:flex-row md:justify-center">
         <Link href="/" className="flex items-center ml-4">
-          <img
+          <Image
             src="/images/ongboy-footer-logo.svg"
             alt="Ongboy Logo"
-            className="h-5 cursor-pointer mr-2"
+            width={20}
+            height={20}
+            className="cursor-pointer mr-2"
+            priority
+            style={{ width: '20px', height: '20px', objectFit: 'contain' }}
           />
           <p>© {currentYear} Ongboy</p>
         </Link>

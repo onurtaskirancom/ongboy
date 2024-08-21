@@ -1,9 +1,10 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import ECommerceSVG from './components/svg/EcommerceSVG';
 import CatalogDesignSVG from './components/svg/CatalogDesignSVG';
 import CorporateWebSVG from './components/svg/CorporateWebSVG';
 import BookLayoutSVG from './components/svg/BookLayoutSVG';
-import InnovationSVG from './components/svg/InnovationSVG'; 
+import InnovationSVG from './components/svg/InnovationSVG';
 
 const HomePage = () => (
   <div className="min-h-screen bg-customGray text-white flex flex-col items-center justify-center p-6 relative">
@@ -15,36 +16,60 @@ const HomePage = () => (
         Teknoloji ve yenilik ile sınırları zorlayan çözümler
       </p>
       <div className="absolute inset-0 flex justify-around items-center z-0">
-        <img
-          src="/images/ongboy-logo-h.svg"
-          alt="Logo"
-          className="w-56 h-56 mx-4 animate-logo-1 opacity-25"
-        />
-        <img
-          src="/images/ongboy-logo-h.svg"
-          alt="Logo"
-          className="w-72 h-72 mx-4 animate-logo-2 opacity-25"
-        />
-        <img
-          src="/images/ongboy-logo-h.svg"
-          alt="Logo"
-          className="w-64 h-64 mx-4 animate-logo-3 opacity-25"
-        />
-        <img
-          src="/images/ongboy-logo-h.svg"
-          alt="Logo"
-          className="w-72 h-72 mx-4 animate-logo-4 opacity-25"
-        />
-        <img
-          src="/images/ongboy-logo-h.svg"
-          alt="Logo"
-          className="w-64 h-64 mx-4 animate-logo-5 opacity-25"
-        />
-        <img
-          src="/images/ongboy-logo-h.svg"
-          alt="Logo"
-          className="w-72 h-72 mx-4 animate-logo-6 opacity-25"
-        />
+        <div className="relative w-64 h-64 mx-4">
+          <Image
+            src="/images/ongboy-logo-h.svg"
+            alt="Logo"
+            fill
+            className="animate-logo-1 opacity-25 object-contain"
+            priority
+          />
+        </div>
+        <div className="relative w-80 h-80 mx-4">
+          <Image
+            src="/images/ongboy-logo-h.svg"
+            alt="Logo"
+            fill
+            className="animate-logo-2 opacity-25 object-contain"
+            priority
+          />
+        </div>
+        <div className="relative w-72 h-72 mx-4">
+          <Image
+            src="/images/ongboy-logo-h.svg"
+            alt="Logo"
+            fill
+            className="animate-logo-3 opacity-25 object-contain"
+            priority
+          />
+        </div>
+        <div className="relative w-80 h-80 mx-4">
+          <Image
+            src="/images/ongboy-logo-h.svg"
+            alt="Logo"
+            fill
+            className="animate-logo-4 opacity-25 object-contain"
+            priority
+          />
+        </div>
+        <div className="relative w-72 h-72 mx-4">
+          <Image
+            src="/images/ongboy-logo-h.svg"
+            alt="Logo"
+            fill
+            className="animate-logo-5 opacity-25 object-contain"
+            priority
+          />
+        </div>
+        <div className="relative w-80 h-80 mx-4">
+          <Image
+            src="/images/ongboy-logo-h.svg"
+            alt="Logo"
+            fill
+            className="animate-logo-6 opacity-25 object-contain"
+            priority
+          />
+        </div>
       </div>
     </header>
 
@@ -66,7 +91,7 @@ const HomePage = () => (
           </p>
         </div>
         <div className="ml-8 hidden lg:block">
-          <InnovationSVG className="w-48 h-48" /> 
+          <InnovationSVG className="w-48 h-48" />
         </div>
       </section>
 

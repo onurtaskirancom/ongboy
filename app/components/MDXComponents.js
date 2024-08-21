@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const MDXComponents = {
   h1: (props) => <h1 className="text-3xl font-bold mb-6" {...props} />,
   h2: (props) => <h2 className="text-2xl font-bold mb-4" {...props} />,
@@ -41,7 +43,18 @@ const MDXComponents = {
       {...props}
     />
   ),
-  img: (props) => <img className="my-4 w-full h-auto rounded" {...props} />,
+  img: (props) => (
+    <div className="my-4 w-full h-auto rounded relative">
+      <Image
+        src={props.src}
+        alt={props.alt || ''}
+        layout="responsive"
+        width={props.width || 800}
+        height={props.height || 600}
+        className="rounded"
+      />
+    </div>
+  ),
   video: (props) => (
     <video className="my-4 w-full h-auto rounded" controls {...props} />
   ),
