@@ -24,15 +24,15 @@ export default function RootLayoutClient({ children }) {
         siteUrl={process.env.SITE_URL || 'http://localhost:3000'}
       />
       <nav className="bg-customGray p-4 text-white flex items-center justify-between fixed w-full top-0 z-50 shadow-md px-8">
-        <Link href="/" className="flex items-center ml-4">
+        <Link href="/" className="flex items-center ml-2">
           <Image
             src="/images/ongboy-logo.svg"
             alt="Ongboy Logo"
-            width={48}
+            width={220}
             height={48}
             className="cursor-pointer"
             priority
-            style={{ width: '48px', height: '48px', objectFit: 'contain' }}
+            style={{ width: '220px', height: '48px', objectFit: 'contain' }}
           />
         </Link>
         <div className="lg:hidden">

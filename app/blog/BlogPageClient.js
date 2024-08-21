@@ -1,12 +1,12 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import ClipLoader from 'react-spinners/ClipLoader';
 
-const BlogPageClient = () => {
+const BlogPageContent = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const pageFromUrl = searchParams.get('page');
@@ -42,7 +42,7 @@ const BlogPageClient = () => {
     if (newPage !== page) {
       setPage(newPage);
       setPosts([]);
-      router.push(`/blog?page=${newPage}`); 
+      router.push(`/blog?page=${newPage}`);
       window.scrollTo(0, 0);
     }
   };
@@ -68,8 +68,7 @@ const BlogPageClient = () => {
   };
 
   return (
-    <div className="min-h-screen bg-customGray text-white p-6">
-      <h1 className="text-4xl font-bold mb-8">Blog</h1>
+    <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {posts.map(({ slug, frontMatter }) => (
           <div
@@ -122,6 +121,14 @@ const BlogPageClient = () => {
         </button>
       </div>
     </div>
+  );
+};
+
+const BlogPageClient = () => {
+  return (
+    <Suspense fallback={<div>Loading page data...</div>}>
+      <BlogPageContent />
+    </Suspense>
   );
 };
 

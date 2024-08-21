@@ -16,7 +16,7 @@ const HomePage = () => (
         Teknoloji ve yenilik ile sınırları zorlayan çözümler
       </p>
       <div className="absolute inset-0 flex justify-around items-center z-0">
-        <div className="relative w-64 h-64 mx-4">
+        <div className="relative w-[500px] h-96 mx-4">
           <Image
             src="/images/ongboy-logo-h.svg"
             alt="Logo"
@@ -25,7 +25,7 @@ const HomePage = () => (
             priority
           />
         </div>
-        <div className="relative w-80 h-80 mx-4">
+        <div className="relative w-[600px] h-96 mx-4">
           <Image
             src="/images/ongboy-logo-h.svg"
             alt="Logo"
@@ -34,7 +34,7 @@ const HomePage = () => (
             priority
           />
         </div>
-        <div className="relative w-72 h-72 mx-4">
+        <div className="relative w-[500px] h-96 mx-4">
           <Image
             src="/images/ongboy-logo-h.svg"
             alt="Logo"
@@ -43,7 +43,7 @@ const HomePage = () => (
             priority
           />
         </div>
-        <div className="relative w-80 h-80 mx-4">
+        <div className="relative w-[650px] h-96 mx-4">
           <Image
             src="/images/ongboy-logo-h.svg"
             alt="Logo"
@@ -52,21 +52,12 @@ const HomePage = () => (
             priority
           />
         </div>
-        <div className="relative w-72 h-72 mx-4">
+        <div className="relative w-[550px] h-96 mx-4">
           <Image
             src="/images/ongboy-logo-h.svg"
             alt="Logo"
             fill
             className="animate-logo-5 opacity-25 object-contain"
-            priority
-          />
-        </div>
-        <div className="relative w-80 h-80 mx-4">
-          <Image
-            src="/images/ongboy-logo-h.svg"
-            alt="Logo"
-            fill
-            className="animate-logo-6 opacity-25 object-contain"
             priority
           />
         </div>

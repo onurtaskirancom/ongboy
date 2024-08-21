@@ -1,7 +1,7 @@
-// app/blog/[slug]/page.js
-
 import BlogPostPageWrapper from './BlogPostPageWrapper';
+import { generateMetadata } from './metadata';
 
-export default function BlogPostPage({ params }) {
+export { generateMetadata }; 
+export default function Page({ params }) {
   return <BlogPostPageWrapper params={params} />;
 }
