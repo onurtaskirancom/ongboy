@@ -1,13 +1,7 @@
-import { Suspense } from 'react';
-import BlogPostPageClient from './BlogPostPageClient';
-import { generateMetadata } from './metadata';
+// app/blog/[slug]/page.js
 
-export { generateMetadata };
+import BlogPostPageWrapper from './BlogPostPageWrapper';
 
-export default function BlogPostPage() {
-  return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <BlogPostPageClient />
-    </Suspense>
-  );
+export default function BlogPostPage({ params }) {
+  return <BlogPostPageWrapper params={params} />;
 }
