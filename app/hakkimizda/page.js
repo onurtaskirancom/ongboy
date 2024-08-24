@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import { generateMetadata } from './metadata'; 
+import { generateMetadata } from './metadata';
 
-export { generateMetadata }; 
+export { generateMetadata };
 
 const AboutPage = () => (
   <div className="max-w-4xl mx-auto p-6 bg-customGray text-white rounded-lg shadow-md">
@@ -9,9 +9,10 @@ const AboutPage = () => (
     <Image
       src="/images/ongboy-logo.svg"
       alt="Logo"
-      width={192}
-      height={192}
-      className="w-2/3 h-48 mx-auto mb-4"
+      width={650}
+      height={250}
+      className="mx-auto mb-4"
+      style={{ width: '650px', height: '250px', objectFit: 'contain' }}
     />
     <p className="text-lg mb-4">
       Biz, teknoloji ve yenilik ile sınırları zorlayan bir yazılım firmasıyız.
