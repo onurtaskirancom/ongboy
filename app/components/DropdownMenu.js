@@ -20,8 +20,7 @@ const DropdownMenu = ({ closeMenu }) => {
     }, 200);
   };
 
-  const handleDropdownClick = (e) => {
-    e.preventDefault();
+  const handleDropdownClick = () => {
     setIsDropdownVisible(!isDropdownVisible);
   };
 
