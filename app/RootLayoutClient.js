@@ -18,13 +18,17 @@ export default function RootLayoutClient({ children }) {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div>
       <CanonicalHead
         siteUrl={process.env.SITE_URL || 'http://localhost:3000'}
       />
       <nav className="bg-customGray p-4 text-white flex items-center justify-between fixed w-full top-0 z-50 shadow-md px-8">
-        <Link href="/" className="flex items-center ml-2">
+        <Link href="/" className="flex items-center ml-2" onClick={closeMenu}>
           <Image
             src="/images/ongboy-logo.svg"
             alt="Ongboy Logo"
@@ -74,6 +78,7 @@ export default function RootLayoutClient({ children }) {
             <Link
               href="/"
               className="hover:border-b-4 hover:border-customPurple transition duration-300 px-2"
+              onClick={closeMenu}
             >
               Ana Sayfa
             </Link>
@@ -82,15 +87,17 @@ export default function RootLayoutClient({ children }) {
             <Link
               href="/hakkimizda"
               className="hover:border-b-4 hover:border-customPurple transition duration-300 px-2"
+              onClick={closeMenu}
             >
               Hakkımızda
             </Link>
           </li>
-          <DropdownMenu />
+          <DropdownMenu closeMenu={closeMenu} />
           <li>
             <Link
               href="/blog"
               className="hover:border-b-4 hover:border-customPurple transition duration-300 px-2"
+              onClick={closeMenu}
             >
               Blog
             </Link>
@@ -99,6 +106,7 @@ export default function RootLayoutClient({ children }) {
             <Link
               href="/iletisim"
               className="hover:border-b-4 hover:border-customPurple transition duration-300 px-2"
+              onClick={closeMenu}
             >
               İletişim
             </Link>

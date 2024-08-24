@@ -3,7 +3,7 @@
 import { useState, useRef } from 'react';
 import Link from 'next/link';
 
-const DropdownMenu = () => {
+const DropdownMenu = ({ closeMenu }) => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const timeoutRef = useRef(null);
 
@@ -20,6 +20,11 @@ const DropdownMenu = () => {
     }, 200);
   };
 
+  const handleDropdownClick = (e) => {
+    e.preventDefault();
+    setIsDropdownVisible(!isDropdownVisible);
+  };
+
   return (
     <li
       className="relative group"
@@ -29,6 +34,7 @@ const DropdownMenu = () => {
       <Link
         href="/hizmetlerimiz"
         className="focus:outline-none hover:border-b-4 hover:border-customPurple transition duration-300"
+        onClick={handleDropdownClick}
       >
         Hizmetler
       </Link>
@@ -41,6 +47,10 @@ const DropdownMenu = () => {
           <Link
             href="/hizmetlerimiz/web-yazilim"
             className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+            onClick={() => {
+              closeMenu();
+              setIsDropdownVisible(false);
+            }}
           >
             Web Yazılım
           </Link>
@@ -49,6 +59,10 @@ const DropdownMenu = () => {
           <Link
             href="/hizmetlerimiz/grafik"
             className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+            onClick={() => {
+              closeMenu();
+              setIsDropdownVisible(false);
+            }}
           >
             Grafik
           </Link>
@@ -57,6 +71,10 @@ const DropdownMenu = () => {
           <Link
             href="/hizmetlerimiz/eticaret"
             className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+            onClick={() => {
+              closeMenu();
+              setIsDropdownVisible(false);
+            }}
           >
             E-Ticaret
           </Link>
@@ -65,6 +83,10 @@ const DropdownMenu = () => {
           <Link
             href="/hizmetlerimiz/kurumsal-web-siteleri"
             className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+            onClick={() => {
+              closeMenu();
+              setIsDropdownVisible(false);
+            }}
           >
             Kurumsal Web Siteleri
           </Link>
@@ -73,6 +95,10 @@ const DropdownMenu = () => {
           <Link
             href="/hizmetlerimiz/blog-icerik-yonetim-sistemleri"
             className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+            onClick={() => {
+              closeMenu();
+              setIsDropdownVisible(false);
+            }}
           >
             Blog ve İçerik Yönetim Sistemleri
           </Link>
@@ -81,6 +107,10 @@ const DropdownMenu = () => {
           <Link
             href="/hizmetlerimiz/dergi"
             className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+            onClick={() => {
+              closeMenu();
+              setIsDropdownVisible(false);
+            }}
           >
             Dergi
           </Link>
@@ -89,6 +119,10 @@ const DropdownMenu = () => {
           <Link
             href="/hizmetlerimiz/katalog"
             className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+            onClick={() => {
+              closeMenu();
+              setIsDropdownVisible(false);
+            }}
           >
             Katalog
           </Link>
@@ -97,6 +131,10 @@ const DropdownMenu = () => {
           <Link
             href="/hizmetlerimiz/kitap-mizanpaj"
             className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+            onClick={() => {
+              closeMenu();
+              setIsDropdownVisible(false);
+            }}
           >
             Kitap Mizanpaş
           </Link>
@@ -105,6 +143,10 @@ const DropdownMenu = () => {
           <Link
             href="/hizmetlerimiz/afis-brosur"
             className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+            onClick={() => {
+              closeMenu();
+              setIsDropdownVisible(false);
+            }}
           >
             Afiş, Broşür
           </Link>
@@ -113,6 +155,10 @@ const DropdownMenu = () => {
           <Link
             href="/hizmetlerimiz/kartvizit-tasarim"
             className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+            onClick={() => {
+              closeMenu();
+              setIsDropdownVisible(false);
+            }}
           >
             Kartvizit Tasarım
           </Link>
@@ -121,6 +167,10 @@ const DropdownMenu = () => {
           <Link
             href="/hizmetlerimiz/logo-tasarim"
             className="block px-4 py-2 hover:bg-gray-700 rounded whitespace-nowrap"
+            onClick={() => {
+              closeMenu();
+              setIsDropdownVisible(false);
+            }}
           >
             Logo Tasarım
           </Link>
