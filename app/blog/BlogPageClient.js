@@ -82,7 +82,7 @@ const BlogPageContent = () => {
                   alt={frontMatter.title}
                   width={800}
                   height={450}
-                  className="w-full h-56 object-cover rounded-t-lg"
+                  className="w-full h-auto object-cover rounded-t-lg"
                   priority
                 />
               </div>
