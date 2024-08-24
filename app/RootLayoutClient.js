@@ -2,17 +2,19 @@
 
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import './globals.css';
 import DropdownMenu from './components/DropdownMenu';
 import CanonicalHead from './components/CanonicalHead';
+import { useRouter } from 'next/navigation';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function RootLayoutClient({ children }) {
   const currentYear = new Date().getFullYear();
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -21,6 +23,13 @@ export default function RootLayoutClient({ children }) {
   const closeMenu = () => {
     setMenuOpen(false);
   };
+
+  useEffect(() => {
+    router.events?.on('routeChangeComplete', closeMenu);
+    return () => {
+      router.events?.off('routeChangeComplete', closeMenu);
+    };
+  }, [router]);
 
   return (
     <div>
