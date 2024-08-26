@@ -31,6 +31,36 @@ export default function RootLayoutClient({ children }) {
     };
   }, [router]);
 
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      window.gtag('config', 'G-BK9137P14C', {
+        page_path: url,
+      });
+    };
+
+    const script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-BK9137P14C';
+    script.async = true;
+    document.head.appendChild(script);
+
+    const scriptInline = document.createElement('script');
+    scriptInline.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BK9137P14C');
+    `;
+    document.head.appendChild(scriptInline);
+
+    router.events?.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      router.events?.off('routeChangeComplete', handleRouteChange);
+      document.head.removeChild(script);
+      document.head.removeChild(scriptInline);
+    };
+  }, [router]);
+
   return (
     <div>
       <CanonicalHead
