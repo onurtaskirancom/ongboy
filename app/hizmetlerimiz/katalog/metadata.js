@@ -24,7 +24,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | Katalog Tasarım',
       description:
         'Ongboy olarak, ürün ve hizmetlerinizi etkili bir şekilde tanıtmak için profesyonel katalog tasarım çözümleri sunuyoruz. Estetik ve işlevsel tasarımlar ile müşteri kitlenize ulaşın.',

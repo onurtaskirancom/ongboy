@@ -24,7 +24,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | Kurumsal Web Siteleri',
       description:
         'Ongboy olarak, şirketinizin dijital dünyada profesyonel bir imaj sergilemesini sağlayan kurumsal web sitesi çözümleri sunuyoruz. Modern ve işlevsel tasarımlarla markanızın değerlerini yansıtıyoruz.',

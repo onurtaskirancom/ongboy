@@ -24,7 +24,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | Afiş ve Broşür Tasarım',
       description:
         'Ongboy olarak, etkinliklerinizi ve kampanyalarınızı en etkileyici şekilde tanıtmanızı sağlayan profesyonel afiş ve broşür tasarım hizmetleri sunuyoruz. Görsel olarak çekici ve bilgilendirici tasarımlar ile hedef kitlenize ulaşın.',

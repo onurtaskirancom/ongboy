@@ -24,7 +24,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | Blog ve İçerik Yönetim Sistemleri',
       description:
         'Ongboy olarak, blog ve içerik yönetim sistemlerimiz ile içeriğinizi kolayca yönetmenizi ve yayınlamanızı sağlıyoruz. Kullanıcı dostu arayüzler ve SEO dostu yapılar ile dijital stratejilerinizi en etkili şekilde hayata geçirmenize olanak tanıyoruz.',

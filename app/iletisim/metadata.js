@@ -25,7 +25,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | İletişim',
       description:
         'Ongboy ile iletişime geçin. Teknoloji ve yazılım çözümleri hakkında bilgi almak için bizimle iletişime geçin.',

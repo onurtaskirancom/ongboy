@@ -24,7 +24,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | Kitap Mizanpaj',
       description:
         'Ongboy olarak, kitaplarınızın profesyonel ve estetik bir görünüme sahip olmasını sağlayan mizanpaj hizmetleri sunuyoruz. İçerik düzenlemeleri ve sayfa tasarımları ile kaliteli bir okuma deneyimi sunuyoruz.',

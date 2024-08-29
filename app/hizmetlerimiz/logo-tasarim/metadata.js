@@ -24,7 +24,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | Logo Tasarım',
       description:
         'Ongboy olarak, markanızın kimliğini güçlendirecek özgün ve akılda kalıcı logo tasarımları sunuyoruz. Yaratıcı logo tasarımlarımızla markanızın tanınırlığını artırın.',

@@ -24,7 +24,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | Hizmetlerimiz',
       description:
         'Ongboy olarak, web yazılım, grafik tasarım, e-ticaret, kurumsal web siteleri, dergi tasarımı, katalog, kitap mizanpajı, afiş ve broşür, kartvizit ve logo tasarımı gibi birçok hizmet sunuyoruz.',

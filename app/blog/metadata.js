@@ -24,7 +24,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | Yazılım ve Grafik Hizmetleri Blogu',
       description:
         'Ongboy blogunda, yazılım geliştirme, grafik tasarım ve dijital çözümlerle ilgili en güncel ve faydalı bilgileri bulabilirsiniz. Sektörümüzdeki yenilikler ve uzman görüşleri ile dolu içeriklerimizi keşfedin.',

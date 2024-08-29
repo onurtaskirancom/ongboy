@@ -24,7 +24,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | E-Ticaret Çözümleri',
       description:
         'Ongboy olarak, kullanıcı dostu ve güvenli e-ticaret platformları oluşturarak işletmenizin dijital pazarda güçlü bir varlık göstermesini sağlıyoruz. Özgün tasarımlar ve işlevsel özelliklerle donatılmış e-ticaret siteleri sunuyoruz.',

@@ -24,7 +24,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | Hakkımızda',
       description:
         'Ongboy, teknoloji ve yenilik ile sınırları zorlayan bir yazılım firmasıdır. Misyonumuz, müşterilerimize en iyi hizmeti sunmak ve onların başarılarını artırmak için yenilikçi çözümler geliştirmektir.',

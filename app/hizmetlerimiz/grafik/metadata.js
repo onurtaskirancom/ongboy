@@ -24,7 +24,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | Grafik Tasarım',
       description:
         'Ongboy olarak, markanızın görsel kimliğini güçlendirmek için geniş bir yelpazede grafik tasarım hizmetleri sunuyoruz. Yaratıcı ve özgün tasarımlarımızla dikkat çekici ve etkileyici görseller oluşturuyoruz.',

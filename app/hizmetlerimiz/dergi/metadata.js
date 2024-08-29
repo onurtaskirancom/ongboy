@@ -24,7 +24,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | Dergi Tasarım',
       description:
         'Ongboy olarak, içeriklerinizi görsel olarak zenginleştirerek okuyucularınıza etkileyici bir deneyim sunan profesyonel dergi tasarım hizmetleri sunuyoruz. Yaratıcı ve özgün tasarımlar ile derginizi öne çıkarıyoruz.',

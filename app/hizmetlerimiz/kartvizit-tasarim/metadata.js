@@ -24,7 +24,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | Kartvizit Tasarım',
       description:
         'Ongboy olarak, iş ilişkilerinizi güçlendirecek profesyonel ve yaratıcı kartvizit tasarım hizmetleri sunuyoruz. Markanızın kimliğini yansıtan özgün kartvizit tasarımlarımız ile fark yaratın.',

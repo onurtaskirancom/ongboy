@@ -25,7 +25,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | Yazılım ve Tasarım Hizmetleri',
       description:
         'Ongboy, teknoloji ve yenilik ile sınırları zorlayan, müşterilerine en iyi hizmeti sunmayı hedefleyen bir yazılım firmasıdır. Grafik tasarım, dergi tasarımı, kitap tasarımı ve katalog hizmetleri de sunmaktayız.',

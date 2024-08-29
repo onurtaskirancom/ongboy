@@ -24,7 +24,7 @@ export async function generateMetadata() {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@Ongboy',
+      site: '@ongboycom',
       title: 'Ongboy | Web Yazılım',
       description:
         'Ongboy olarak, modern ve kullanıcı dostu web yazılım çözümleri sunuyoruz. Kurumsal web siteleri, e-ticaret çözümleri, blog ve içerik yönetim sistemleri, web uygulamaları ve sürekli bakım ve destek hizmetleri sağlıyoruz.',

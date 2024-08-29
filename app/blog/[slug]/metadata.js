@@ -31,7 +31,7 @@ export async function generateMetadata({ params }) {
       },
       twitter: {
         card: 'summary_large_image',
-        site: '@Ongboy',
+        site: '@ongboycom',
         title: post.frontMatter.title,
         description: post.frontMatter.excerpt || 'Ongboy Blog',
         image: post.frontMatter.image || `${siteUrl}/images/default.jpg`,
@@ -58,7 +58,7 @@ export async function generateMetadata({ params }) {
       },
       twitter: {
         card: 'summary_large_image',
-        site: '@Ongboy',
+        site: '@ongboycom',
         title: 'Ongboy | Blog',
         description: 'Ongboy blogunda en güncel içerikleri bulabilirsiniz.',
         image: `${siteUrl}/images/default.jpg`,
